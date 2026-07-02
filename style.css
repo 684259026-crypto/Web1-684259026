@@ -29,13 +29,7 @@ li {
 
 }
 
-li:hover {
-    cursor: pointer;
-    color: blue;
-    transform: scale(1.1);
-    transition: 1.0s;
-    
-}
+
 
 pre {
      background-color: white;
@@ -52,4 +46,25 @@ p {
 
 a {
     text-decoration: none;
+
+}
+
+a:hover {
+    color: red;
+}
+
+li:hover {
+    cursor: pointer;
+    color: blue;
+    transform: scale(1.1);
+    transition: 1.0s;
+    
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+.text-center {
+    text-align: center;
 }
