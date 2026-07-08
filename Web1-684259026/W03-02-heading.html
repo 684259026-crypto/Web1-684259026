@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W03-01-heading.html</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            /* margin: 30px; */
+            line-height: 1.6;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .text-title {
+            color: red;
+            font-size: 48px;
+        }
+
+        .text-center {
+            align-items: center;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 20px;
+            padding: 10px;
+            border: 2px solid;
+            box-shadow: 0 4px 10px;
+            margin-bottom: 20px;
+            line-height: 2.0;
+
+        }
+
+        pre {
+            background-color: rgb(240, 222, 166);
+            border-left: 4px solid #9e6565;
+            padding: 5px 10px;
+            font-size: 16px;
+            border-radius: 15px;
+        }
+
+        .note {
+            color: rgb(241, 4, 4);
+            background-color: rgb(204, 245, 20);
+        }
+
+        .note::before {
+            content: "📌";
+
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* border: 5px solid; */
+            /* max-width: 1200px; */
+        }
+
+        .container {
+            padding: 50px;
+            background-color: rgb(129, 201, 211);
+            border: 3px solid;
+            border-radius: 20px;
+            width: 1500px;
+        }
+
+        .hero {
+            padding: 30px 30px;
+        }
+
+        .header {
+            /* background-color: aqua; */
+            background: linear-gradient(to right, #0548ff, #7baffe);
+            margin-bottom: 5rem;
+            padding: 20px;
+            color: black;
+            text-align: center;
+        }
+
+        .header a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .h1-label {
+            background-color: red;
+            color: white;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .h2-label {
+            background-color: rgb(28, 192, 241) ;
+            color: white;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .h3-label {
+            background-color: blue ;
+            color: white;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .h4-label {
+            background-color: rgb(17, 83, 28) ;
+            color: white;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .h5-label {
+            background-color: rgb(255, 8, 173) ;
+            color: white;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .h6-label {
+            background-color: rgb(31, 236, 24) ;
+            color: white;
+            border-radius: 5px;
+            padding: 5px;   
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h1> เรียนรู้เว็บเบื้องต้น</h1>
+        <a href="index.html">Home</a>
+    </div>
+
+    <div class="box">
+        <div class="container">
+            <div class="hero"> 
+                <h1 class="text-title">Workshop:HTML Heading</h1>
+                <p>ฝึกใช้เเท็ก h1-h6 และปรับขนาดหัวข้อด้วย css</p>
+            </div>
+            
+            <div class="card">
+                <h2>1. ความหมายของ Headings (H1-H6)</h2>
+                <ul>
+                    <li> <span class="h1-label">H1</span> – หัวข้อใหญ่สุด ใช้ส าหรับชื่อหน้าเว็บหรือหัวข้อหลัก</li>
+                    <li> <span class="h2-label">H2</span> – หัวข้อรอง แบ่ง Section ของเนื้อหา</li>
+                    <li> <span class="h3-label">H3</span> – หัวข้อย่อยภายใน H2</li>
+                    <li> <spen class="h4-label">H4</spen> – ย่อยลงไปอีกระดับ</li>
+                    <li> <span class="h5-label">H5</span> – ใช้น้อย แต่เน้นล าดับข้อมูล</li>
+                    <li> <span class="h6-label">H6</span> – เล็กสุด ใช้กับหัวข้อระดับล</li>
+                </ul>
+                <p class="note" style="border-left: 4px solid red;">
+                    💡H1 ควรมีเพียง 1 อันในแต่ละหน้า เพื่อช่วย SEO และโครงสร้างเอกสาร
+                </p>
+            </div>
+            <div class="card">
+                <h1>2. ตัวอยา่ งการใช ้H1–H6</h1>
+                <pre>
+
+     <code>
+         &gt;Welcome to My Website&lt;/h1&gt;
+         &lt;h2&gt;HTML Basics&lt;/h2&gt;
+         &lt;h3&gt;What is HTML?&lt;/h3&gt;
+         &lt;h4&gt;HTML Syntax&lt;/h4&gt;
+         &lt;h5&gt;Example Code&lt;/h5&gt;
+         &lt;h6&gt;Note: Case Sensitive&lt;/h6&gt;
+     </code>
+    </pre>
+            </div <hr>
+            <div class="card ">
+                <h1>H1: Welcome to My Website
+                </h1>
+                <h2>H2: HTML Basics
+                </h2>
+                <h3>H3: What is HTML?
+                </h3>
+                <h4>H4: HTML Syntax
+                </h4>
+                <h5>H5: Example Code</h5>
+                <h6 class="note">H6: Note about heading size</h6>
+
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

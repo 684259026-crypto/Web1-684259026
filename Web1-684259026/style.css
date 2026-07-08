@@ -1,0 +1,70 @@
+h1 {
+    color: red;
+    text-align: center ;
+}
+
+h2 {
+    text-align: center ;
+}
+
+li {
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+.pro {
+    /* text-align: center; */
+    /* background-color: aqua ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #ccc;
+}
+
+.container {
+    background-color: aquamarine;
+    margin: 50px;
+    padding: 50px;
+    border: 5px solid #ccc;
+
+}
+
+
+
+pre {
+     background-color: white;
+     padding: 10px;
+     border: 5px solid #ccc;
+}
+
+p {
+    background-color: aliceblue;
+    padding: 10px;
+    margin: 10px  ;
+    border: 5px solid #ccc;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: red;
+}
+
+li:hover {
+    cursor: pointer;
+    color: blue;
+    transform: scale(1.1);
+    transition: 1.0s;
+    
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+.text-center {
+    text-align: center;
+}
