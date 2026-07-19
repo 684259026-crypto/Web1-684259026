@@ -3,178 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>แบบฝึกปฏิบัติ: HTML Formatting</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: #f7f9fc;
-            color: #333;
-        }
-
-        /* Navbar ด้านบน */
-        .navbar {
-            background-color: #0f4c5c; 
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 40px;
-        }
-
-        .navbar .logo {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .navbar .logo h1 {
-            font-size: 1.2rem;
-            margin: 0;
-        }
-
-        .navbar .logo p {
-            font-size: 0.8rem;
-            color: #d1e8e2;
-        }
-
-        .navbar .links {
-            display: flex;
-            gap: 20px;
-            font-size: 0.9rem;
-        }
-
-        /* ส่วนหัวเรื่อง */
-        .header {
-            text-align: center;
-            padding: 40px 20px 20px;
-        }
-
-        .header h2 {
-            font-size: 2rem;
-            color: #0f4c5c;
-            margin-bottom: 10px;
-        }
-
-        .header p {
-            color: #555;
-        }
-
-        /* จัด Layout แบบ Grid 3 คอลัมน์ */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        /* รูปแบบการ์ดทั้ง 3 คอลัมน์ (ขอบเหลือง) */
-        .card {
-            background: white;
-            border: 15px solid #fff200; /* ขอบสีเหลือง */
-            border-radius: 4px;
-            padding: 20px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-        }
-
-        .card-title {
-            color: #333;
-            font-size: 1rem;
-            font-weight: normal;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        /* คอลัมน์ที่ 1: ตัวอย่างผลลัพธ์ */
-        .output-row {
-            display: flex;
-            align-items: center;
-            margin-bottom: 12px;
-            gap: 15px;
-        }
-
-        .badge {
-            background-color: #e36414; 
-            color: white;
-            padding: 6px 12px;
-            border-radius: 6px;
-            font-size: 0.8rem;
-            font-weight: bold;
-            width: 80px;
-            text-align: center;
-        }
-
-        /* คอลัมน์ที่ 2: โค้ด HTML */
-        .simple-text-code {
-            color: #111;
-            font-size: 0.9rem;
-            line-height: 1.8;
-        }
-
-        /* คอลัมน์ที่ 3: กิจกรรมฝึกปฏิบัติ */
-        .task-list {
-            list-style: none;
-        }
-
-        .task-list li {
-            margin-bottom: 18px;
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-            line-height: 1.5;
-        }
-
-        .task-list li::before {
-            content: '✔️';
-            color: #e36414;
-        }
-
-        .file-badge {
-            background-color: #e2f1ff;
-            color: #0066cc;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-family: monospace;
-        }
-
-        /* กล่องเกร็ดความรู้ด้านล่าง */
-        .info-box {
-            max-width: 1160px;
-            margin: 20px auto 40px;
-            background-color: #fdf6ec;
-            border: 1px solid #f6e1c5;
-            border-left: 6px solid #e36414;
-            padding: 25px;
-            border-radius: 8px;
-        }
-
-        .info-box h3 {
-            color: #d25a0b;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .info-box p {
-            color: #555;
-            line-height: 1.6;
-        }
-
-        .code-inline {
-            color: #0066cc;
-            font-weight: bold;
-        }
-    </style>
+    <title>HTML Formatting</title>
+    <link rel="stylesheet" href="formatting.css">
 </head>
 <body>
 
@@ -182,7 +12,7 @@
         <div class="logo">
             <div>
                 <h1>เรียนรู้เว็บเบื้องต้น</h1>
-                <a href="index.html">Web Development Basics</a>
+                <a href="index.html">Basic Web Development</a>
             </div>
         </div>
         <div class="links">
@@ -193,89 +23,145 @@
         </div>
     </div>
 
-    <div class="header">
-        <h2>แบบฝึกปฏิบัติ: HTML Formatting</h2>
-        <p>เรียนรู้การจัดรูปแบบข้อความด้วยแท็ก HTML พร้อมตัวอย่างและการตกแต่งด้วย CSS</p>
-    </div>
-
     <div class="container">
-        
-        <div class="card">
-            <div class="card-title">📱 ตัวอย่างผลลัพธ์</div>
-            <div class="output-row">
-                <div class="badge">B:</div>
-                <div><b>ข้อความตัวหนา</b></div>
+        <!-- hero -->
+        <div class="header">
+            <div class="header-icon">&lt;/&gt;</div>
+            <div class="header-text"><h2>แบบฝึกปฏิบัติ: HTML Formatting</h2>
+            <p>เรียนรู้การจัดรูปแบบข้อความด้วยแท็ก HTML พร้อมตัวอย่างและการตกแต่งด้วย CSS</p>
             </div>
-            <div class="output-row">
-                <div class="badge">STRONG:</div>
-                <div><strong>ข้อความสำคัญ</strong></div>
+            
+            
+        </div>
+        <!-- main content -->
+        <div class="main-box">
+            
+            <div class="card-grid">
+                 <!-- card 1 -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-header-icon">🖥</span> ตัวอย่างผลลัพธ์
+                </div>
+
+                <div class="card-body">
+                    <div class="format-row">
+                        <span class="label b-label">B:</span>
+                        <b>ข้อความตัวหนา</b>
+                    </div>
+
+                    <div class="format-row">
+                        <span class="label strong-label">STRONG:</span>
+                        <strong>ข้อความสำคัญ</strong>
+                    </div>
+                    <div class="format-row">
+                        <span class="label i-label">I:</span>
+                        <i>ข้อความตัวเอียง</i>
+                    </div>
+                    <div class="format-row">
+                        <span class="label em-label">EM:</span>
+                        <em>ข้อความเน้นเสียง</em>
+                    </div>
+                    <div class="format-row">
+                        <span class="label u-label">U:</span>
+                        <u>ข้อความขีดเส้นใต้</u>
+                    </div>
+                    <div class="format-row">
+                        <span class="label mark-label">MARK:</span>
+                        <mark>ข้อความที่ถูกเน้น</mark>
+                    </div>
+                    <div class="format-row">
+                        <span class="label small-label">SMALL:</span>
+                        <small>ข้อความขนาดเล็ก</small>
+                    </div>
+                    <div class="format-row">
+                        <span class="label del-label">DEL:</span>
+                        <del>ข้อความที่ถูกลบ</del>
+                    </div>
+                    <div class="format-row">
+                        <span class="label sup-label">SUP:</span>
+                        <span>x<sup>2</sup></span>
+                    </div>
+                    <div class="format-row">
+                        <span class="label sub-label">SUB:</span>
+                        <span>H<sub>2</sub>O</span>
+                    </div>
+                    
+                    
+                                </div>
+                </div>
+
+                <!-- card2 -->
+            <div class="card">
+
+                <div class="card-header">
+                    <span class="card-header-icon">&lt;/&gt;</span>ตัวอย่างโค้ด HTML
+                </div>
+
+                <div class="card-body">
+                <div class="pre-box">
+<pre><span class="line-no">1</span><span class="html-tag">&lt;b&gt;</span><span>ข้อความตัวหนา</span><span class="html-tag">&lt;/b&gt;</span>
+<span class="line-no">2</span><span class="html-tag">&lt;strong&gt;</span><span>ข้อความสำคัญ</span><span class="html-tag">&lt;/strong&gt;</span>
+<span class="line-no">3</span><span class="html-tag">&lt;i&gt;</span><span>ข้อความตัวเอียง</span><span class="html-tag">&lt;/i&gt;</span>
+<span class="line-no">4</span><span class="html-tag">&lt;em&gt;</span><span>ข้อความเน้นเสียง</span><span class="html-tag">&lt;/em&gt;</span>
+<span class="line-no">5</span><span class="html-tag">&lt;u&gt;</span><span>ข้อความขีดเส้นใต้</span><span class="html-tag">&lt;/u&gt;</span>
+<span class="line-no">6</span><span class="html-tag">&lt;mark&gt;</span><span>ข้อความที่ถูกเน้น</span><span class="html-tag">&lt;/mark&gt;</span>
+<span class="line-no">7</span><span class="html-tag">&lt;small&gt;</span><span>ข้อความขนาดเล็ก</span><span class="html-tag">&lt;/small&gt;</span>
+<span class="line-no">8</span><span class="html-tag">&lt;del&gt;</span><span>ข้อความที่ถูกลบ</span><span class="html-tag">&lt;/del&gt;</span>
+<span class="line-no">9</span><span class="html-tag">x</span><span>&lt;sup&gt;</span><span>2</span><span class="html-tag">&lt;/sup&gt;</span>
+<span class="line-no">10</span><span class="html-tag">H</span><span>&lt;sub&gt;</span><span>2</span><span class="html-tag">&lt;/sub&gt;</span><span>O</span>
+</pre>
+                </div>
+                </div>
+
+
+
             </div>
-            <div class="output-row">
-                <div class="badge">I:</div>
-                <div><i>ข้อความตัวเอียง</i></div>
+
+
+                    <!-- card3 -->
+                <div class="card">
+                    <div class="card-header"><span class="card-header-icon purple-bg">🎯</span> <span class="purple-text">กิจกรรมฝึกปฏิบัติ</span></div>
+                    
+                    
+                    <div class="card-body">
+                    <ul class="activity-list">
+                        <li><span class="check check-blue" >✓</span>
+                            ให้นักศึกษาสร้างหน้าเว็บ 1 หน้า
+                        </li>
+
+                        <li><span class="check check-pink" >✓</span>
+                            ใช้แท็ก formatting อย่างน้อย 6 รูปแบบ
+                        </li>
+
+                        <li><span class="check check-green" >✓</span>
+                            ทดลองเปรียบเทียบ &lt;b&gt; กับ &lt;strong&gt; และ &lt;i&gt; กับ &lt;em&gt;
+                        </li>
+
+                        <li><span class="check check-orange" >✓</span>
+                            ปรับสี ขนาด และพื้นหลังบางข้อความด้วย CSS
+                        </li>
+
+                        <li><span class="check  check-red" >✓</span>
+                            บันทึกไฟล์ชื่อ formatting.html
+                        </li>
+                    </ul>
+                    </div>
+                </div>
             </div>
-            <div class="output-row">
-                <div class="badge">EM:</div>
-                <div><em>ข้อความเน้นเสียง</em></div>
+
+            <div class="info-box">
+                <h3> <span class="icon-info">💡</span>
+                    เกร็ดความรู้
+                </h3>
+                <p>แท็กจัดรูปแบบข้อความช่วยให้เนื้อหาสื่อสารชัดเจนและมีความหมายมากขึ้น เช่น<span class="text-blue"> &lt;strong&gt; </span>ใช้สำหรับข้อความสำคัญ<span class="text-blue"> &lt;em&gt;</span> ใช้เน้นความสำคัญหรืออารมณ์ และ<span class="text-blue"> &lt;mark&gt; </span>ใช้เน้นข้อความที่ต้องการให้โดดเด่น แท็กเหล่านี้ช่วยเพิ่มความอ่านง่ายและช่วยจัดระเบียบเนื้อหาให้ผู้ใช้งานเข้าใจได้ง่ายขึ้น</p>
             </div>
-            <div class="output-row">
-                <div class="badge">U:</div>
-                <div><u>ข้อความขีดเส้นใต้</u></div>
-            </div>
-            <div class="output-row">
-                <div class="badge">MARK:</div>
-                <div><mark">ข้อความที่ถูกเน้น</mark></div>
-            </div>
-            <div class="output-row">
-                <div class="badge">SMALL:</div>
-                <div><small>ข้อความขนาดเล็ก</small></div>
-            </div>
-            <div class="output-row">
-                <div class="badge">DEL:</div>
-                <div><del>ข้อความที่ถูกลบ</del></div>
-            </div>
-            <div class="output-row">
-                <div class="badge">SUP:</div>
-                <div>x<sup>2</sup></div>
-            </div>
-            <div class="output-row">
-                <div class="badge">SUB:</div>
-                <div>H<sub>2</sub>O</div>
-            </div>
+
         </div>
 
-        <div class="card">
-            <div class="card-title">&lt;/&gt; ตัวอย่างโค้ด HTML</div>
-            <div class="simple-text-code">
-                <div>1&lt;b&gt;ข้อความตัวหนา&lt;/b&gt;</div>
-                <div>2&lt;strong&gt;ข้อความสำคัญ&lt;/strong&gt;</div>
-                <div>3&lt;i&gt;ข้อความตัวเอียง&lt;/i&gt;</div>
-                <div>4&lt;em&gt;ข้อความเน้นเสียง&lt;/em&gt;</div>
-                <div>5&lt;u&gt;ข้อความขีดเส้นใต้&lt;/u&gt;</div>
-                <div>6&lt;mark&gt;ข้อความที่ถูกเน้น&lt;/mark&gt;</div>
-                <div>7&lt;small&gt;ข้อความขนาดเล็ก&lt;/small&gt;</div>
-                <div>8&lt;del&gt;ข้อความที่ถูกลบ&lt;/del&gt;</div>
-                <div>9x&lt;sup&gt;2&lt;/sup&gt;</div>
-                <div>10H&lt;sub&gt;2&lt;/sub&gt;O</div>
-            </div>
+        <div class="footer">
+            Copyright © 2026 Suksawat Saelim. All rights reserved.
         </div>
 
-        <div class="card">
-            <div class="card-title">🎯 กิจกรรมฝึกปฏิบัติ</div>
-            <ul class="task-list">
-                <li>ให้นักศึกษาสร้างหน้าเว็บ 1 หน้า</li>
-                <li>ใช้แท็ก formatting อย่างน้อย 6 รูปแบบ</li>
-                <li>ทดลองเปรียบเทียบ <span class="code-inline">&lt;b&gt;</span> กับ <span class="code-inline">&lt;strong&gt;</span> และ <span class="code-inline">&lt;i&gt;</span> กับ <span class="code-inline">&lt;em&gt;</span></li>
-                <li>ปรับสี ขนาด และพื้นหลังข้อความด้วย CSS</li>
-                <li>บันทึกไฟล์ชื่อ <span class="file-badge">formatting.html</span></li>
-            </ul>
-        </div>
-
-    </div>
-
-    <div class="info-box">
-        <h3>💡 เกร็ดความรู้</h3>
-        <p>แท็กจัดรูปแบบข้อความช่วยให้เนื้อหาสื่อสารชัดเจนและมีความหมายมากขึ้น เช่น <span class="code-inline">&lt;strong&gt;</span> ใช้สำหรับข้อความสำคัญ <span class="code-inline">&lt;em&gt;</span> ใช้เน้นความสำคัญหรืออารมณ์ และ <span class="code-inline">&lt;mark&gt;</span> ใช้เน้นข้อความที่ต้องการให้โดดเด่น แท็กเหล่านี้ช่วยเพิ่มความอ่านง่ายและช่วยจัดระเบียบเนื้อหาให้ผู้ใช้งานเข้าใจได้ง่ายขึ้น</p>
     </div>
 
 </body>
