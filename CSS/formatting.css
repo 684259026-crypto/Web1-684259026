@@ -378,26 +378,22 @@ body {
   font-family: sans-serif;
 }
 
-/* layout 4 คอลัมน์ */
 .footer-container {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 60px;
 }
 
-/* หัวข้อ */
 .footer-col h2 {
   color: white;
   margin-bottom: 15px;
 }
 
-/* ข้อความ */
 .footer-col p {
   margin-bottom: 15px;
   line-height: 1.6;
 }
 
-/* list */
 .footer-col ul {
   list-style: none;
   padding: 0;
@@ -408,18 +404,15 @@ body {
   cursor: pointer;
 }
 
-/* hover */
 .footer-col ul li:hover {
   color: white;
 }
 
-/* เส้น */
 .footer-line {
   border-top: 1px solid rgba(255,255,255,0.2);
   margin: 40px 0 20px;
 }
 
-/* copyright */
 .footer-copy {
   text-align: center;
   font-size: 14px;
