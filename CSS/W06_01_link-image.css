@@ -206,11 +206,129 @@ body {
 }
 
 .card {
-border: 1px solid black;
-    
+  /* border: 1px solid rgb(31, 76, 160); */
+  padding: 26px 36px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgb(124, 123, 123);
+  background-color: white;
+  border: 1pz solid rgb(117, 130, 247);
+  border-radius: 15px;
+  margin-top: 20px;
+}
 
-    padding: 20px;
-    margin: 15px;
+.card-header-title {
+  
+
+}
+.card-header-title h2{
+  color: rgb(21, 21, 83);
+}
+.card-body-grid {
+display: grid;
+grid-template-columns: 0.75fr 1.25fr;
+gap: 20px;
+}
+/* กล่องลิ้งด้านซ้าย */
+.result-panel,.code-panel {
+border: 1px solid rgb(90, 20, 219);
+border-radius: 10px;
+
+overflow: hidden;
+
+}
+
+.result-panel-header,.code-panel-header {
+  color: rgb(21, 21, 83);
+  background-color: rgb(145, 146, 255);
+  padding: 0px 20px;
+  font-weight: bold;
+}
+.result-panel-body {
+  line-height: 2;
+
+   padding: 5px 20px 20px 20px;
+
+}
+.result-panel-emoji{
+  background-color: rgb(21, 21, 109);
+  border-radius: 4px;
+  margin-right: 10px;
+
+}
+
+.result-panel-body a{
+ display: block;
+
+ color: rgb(48, 48, 177);
+}
+.result-panel-body a:hover{
+ color: rgb(139, 38, 52);
+}
+
+.back-btn {
+  border: 2px solid rgb(35, 40, 116);
+  border-radius: 10px;
+
+  display: inline-block !important;
+  padding: 0 20px;
+  text-decoration: none;
+}
+/* โค้ดด้านขวา */
+.code-panel {
+  background-color: black;
+  color: white;
+}
+
+.code-panel-body {
+
+
+}
+.code-list {
+  padding: 16px 20px;
+}
+.code-list li {
+  padding: 0 20px;
+}
+
+.tag {
+  color: red;
+}
+.attr {color: greenyellow;}
+.value {color: green;}
+
+/* Image example */
+.result-panel-body-3g {
+  display: grid;
+  grid-template-columns: repeat(3fr,1fr);
+  gap :20px
+}
+
+
+/* right side bar */
+.right-sidebar {
+  border: 1px solid rgb(31, 76, 160);
+  padding: 15px;
+  margin: 15px;
+}
+
+.side_cerd {
+}
+
+.submit-card {
+}
+
+/* footer section */
+.tip-box {
+  border: 1px solid red;
+  padding: 15px;
+  margin: 15px;
+}
+
+.result-panel-body-3g {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+
+    padding: 20px   ;
 }
 
 /* right siber */
