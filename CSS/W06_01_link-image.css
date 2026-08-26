@@ -479,3 +479,89 @@ body {
   padding: 20px;
   margin: 15px;
 }
+
+.right-sidebar-text2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.b-label {
+  background-color: rgb(141, 154, 231);
+  padding: 7px;
+  margin: 10px;
+    border-radius: 20px;
+    color: rgb(63, 8, 190);
+    font-weight: bold;
+}
+
+.c-label {
+  background-color: rgb(175, 226, 255);
+  padding: 7px;
+  margin: 10px;
+    border-radius: 20px;
+    color: rgb(6, 147, 241);
+    font-weight: bold;
+}
+
+.g-label {
+  background-color: rgb(192, 250, 210);
+  padding: 7px;
+  margin: 10px;
+    border-radius: 20px;
+    color: rgb(6, 129, 62);
+    font-weight: bold;
+}
+
+.o-label {
+  background-color: rgb(252, 219, 130);
+  padding: 7px;
+  margin: 10px;
+    border-radius: 20px;
+    color: rgb(255, 166, 0);
+    font-weight: bold;
+}
+
+.right-sidebar-text21 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 20px 0;
+}
+
+.p-label {
+  background-color: rgb(237, 209, 255);
+  padding: 6px;
+  margin: 10px;
+    border-radius: 20px;
+    color: rgb(204, 0, 255);
+    font-weight: bold;
+}
+.r-label {
+  background-color: rgb(255, 188, 188);
+  padding: 6px;
+  margin: 10px;
+    border-radius: 20px;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
+.q-label {
+  background-color: rgb(179, 255, 223);
+  padding: 6px;
+  margin: 10px;
+    border-radius: 20px;
+    color: rgb(41, 90, 57);
+    font-weight: bold;
+}
+.y-label {
+  background-color: rgb(235, 255, 164);
+  padding: 6px;
+  margin: 10px;
+    border-radius: 20px;
+    color: rgb(136, 134, 32);
+    font-weight: bold;
+}
