@@ -416,7 +416,6 @@ body {
 
 
 .right-sideber {
-  border: ;
 
 
   padding: 20px;
@@ -491,7 +490,7 @@ body {
 
 .b-label {
   background-color: rgb(141, 154, 231);
-  padding: 7px;
+  padding: 4px;
   margin: 10px;
     border-radius: 20px;
     color: rgb(63, 8, 190);
@@ -500,7 +499,7 @@ body {
 
 .c-label {
   background-color: rgb(175, 226, 255);
-  padding: 7px;
+  padding: 4px;
   margin: 10px;
     border-radius: 20px;
     color: rgb(6, 147, 241);
@@ -509,7 +508,7 @@ body {
 
 .g-label {
   background-color: rgb(192, 250, 210);
-  padding: 7px;
+  padding: 4px;
   margin: 10px;
     border-radius: 20px;
     color: rgb(6, 129, 62);
@@ -518,24 +517,24 @@ body {
 
 .o-label {
   background-color: rgb(252, 219, 130);
-  padding: 7px;
+  padding: 4px;
   margin: 10px;
     border-radius: 20px;
     color: rgb(255, 166, 0);
     font-weight: bold;
 }
 
-.right-sidebar-text21 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+.right-sidebar-text2 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
   margin: 20px 0;
 }
 
+
+
 .p-label {
   background-color: rgb(237, 209, 255);
-  padding: 6px;
+  padding: 4px;
   margin: 10px;
     border-radius: 20px;
     color: rgb(204, 0, 255);
@@ -543,7 +542,7 @@ body {
 }
 .r-label {
   background-color: rgb(255, 188, 188);
-  padding: 6px;
+  padding: 4px;
   margin: 10px;
     border-radius: 20px;
     color: rgb(255, 0, 0);
@@ -551,7 +550,7 @@ body {
 }
 .q-label {
   background-color: rgb(179, 255, 223);
-  padding: 6px;
+  padding: 4px;
   margin: 10px;
     border-radius: 20px;
     color: rgb(41, 90, 57);
@@ -559,9 +558,314 @@ body {
 }
 .y-label {
   background-color: rgb(235, 255, 164);
-  padding: 6px;
+  padding: 4px;
   margin: 10px;
     border-radius: 20px;
     color: rgb(136, 134, 32);
     font-weight: bold;
 }
+
+.right-sideber-main {
+  display: flex;
+}
+
+.side-card {
+    background-color: white;
+
+    border: 1px solid #dbeafe;
+    border-radius: 15px;
+
+    padding: 20px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+
+/* หัวข้อ */
+.card-header {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 15px;
+}
+
+
+.card-header .icon {
+    font-size: 32px;
+}
+
+
+.card-header h2 {
+    color: #0755b5;
+    font-size: 28px;
+}
+
+
+/* รายการ */
+.activity {
+    list-style: none;
+}
+
+
+/* แต่ละข้อ */
+.activity li {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 10px;
+}
+
+
+/* วงกลมตัวเลข */
+.number {
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-weight: bold;
+
+    flex-shrink: 0;
+}
+
+.side-card {
+  margin-top: 20px;
+}
+
+/* สีตัวเลข */
+.blue {
+    background-color: #2563eb;
+}
+
+.green {
+    background-color: #22c55e;
+}
+
+.orange {
+    background-color: #f59e0b;
+}
+
+.purple {
+    background-color: #8b5cf6;
+}
+
+.pink {
+    background-color: #ec4899;
+}
+
+.teal {
+    background-color: #14b8a6;
+}
+
+
+/* ข้อความ */
+.activity p {
+    font-size: 17px;
+    color: #222;
+}
+
+
+/* =========================
+   กล่องสิ่งที่ต้องส่ง
+   ========================= */
+
+.submit-card {
+    background-color: #fff3c4;
+    border: 1px solid #f5d565;
+    border-radius: 15px;
+
+    padding: 20px;
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+/* เครื่องบิน */
+.submit-icon {
+    font-size: 40px;
+}
+
+
+/* หัวข้อ */
+.submit-card h2 {
+    color: #0755b5;
+
+    font-size: 26px;
+
+    margin-bottom: 2px;
+}
+
+
+/* ข้อความ */
+.submit-card p {
+    font-size: 17px;
+    color: #222;
+}
+
+
+.knowledge-box {
+    width: 100%;
+    min-height: 115px;
+
+    background-color: #eef8ff;
+
+    border: 1px solid #b9ddff;
+    border-radius: 10px;
+
+    padding: 15px 20px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+
+/* วงกลม i */
+.info-icon {
+    width: 46px;
+    height: 46px;
+
+    background-color: #2563eb;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 32px;
+    font-weight: bold;
+
+    flex-shrink: 0;
+}
+
+
+/* ส่วนข้อความ */
+.knowledge-content {
+    flex: 1;
+}
+
+
+/* หัวข้อ */
+.knowledge-content h3 {
+    color: #0755b5;
+
+    font-size: 18px;
+
+    margin-bottom: 3px;
+}
+
+
+/* เนื้อหา */
+.knowledge-content p {
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    margin: 0;
+}
+
+
+/* คำที่ต้องการเน้น */
+.knowledge-content span {
+    color: red;
+    font-weight: 600;
+}
+
+
+/* ไอคอนด้านขวา */
+.knowledge-icon {
+    width: 45px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 5px;
+
+    font-size: 28px;
+
+    flex-shrink: 0;
+}
+
+@media (max-width:1200px) {
+  .site-header {
+    background: linear-gradient(110deg, rgb(250, 246, 246), rgb(0, 0, 0))
+  }
+
+  .main-layout {
+    display: grid;
+    grid-template-columns: 1fr ;
+    padding: 20px 22px;
+    gap: 15px;
+  }
+  .right-sidebar {
+  border: 1px solid rgb(31, 76, 160);
+  padding: 15px;
+  margin: 15px;
+}
+}
+@media (max-width:992px) {
+  .container {
+    background-color: #22c55e;
+  }
+
+   .right-sidebar {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+}
+@media (max-width:768px) {
+  .container {
+    background-color: #f09000;
+  }
+  .card-body-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+  }
+ 
+}
+@media (max-width:768px) {
+  .knowledge-box {
+    grid-template-columns: 90px 1fr;
+  }
+  .hero-photo img {
+  width: 100%;
+  height: auto;
+  
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+ 
+.result-panel-body-3g{
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+}
+}
+
+
+
+
