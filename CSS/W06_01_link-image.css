@@ -805,6 +805,10 @@ body {
     flex-shrink: 0;
 }
 
+.card {
+  margin-top: 20px;
+}
+
 @media (max-width:1200px) {
   .site-header {
     background: linear-gradient(110deg, rgb(250, 246, 246), rgb(0, 0, 0))
@@ -860,12 +864,17 @@ body {
   gap: 50px;
 }
  
-.result-panel-body-3g{
-  grid-template-columns: 1fr 1fr 1fr;
-  display: grid;
+.result-panel-body-3g {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+
+
+    }
+
+  .result-panel-body img {
+    width: 30%;
+    height: auto;
+  }
 }
-}
-
-
-
 
