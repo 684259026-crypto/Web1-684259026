@@ -1,75 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learning about HTML">
-    <title>HTML Tutroial</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <title>HTML Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+
+    <div class="navber">
+
+        <h1>HTML Tutorial</h1>
+
+        <div class="navber-list">
+
+            <button class="btn">Home</button>
+
+            <select id="workshopSelect">
+                <option value="" selected disabled>Workshop</option>
+                <option value="W03-01-heading.html">Heading1</option>
+                <option value="W03-02-heading.html">Heading2</option>
+                <option value="W04-01-formatting.html">Formatting</option>
+                <option value="W06_01_link-image.html">Link-image</option>
+            </select>
+
+        </div>
+
+    </div>
+
+    <div class="container">
 
 
-    <!-- intermal -->
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            /* background-color: black; */
-            font-family: sans-serif;
-            margin: 20px;
-
-
-            line-height: 1.5;
-        }
-
-        h1 {
-            color: red;
-            margin-left: 40px;
-            /* text-align: center; */
-
-        }
-
-        ul {
-            color: blue;
-        }
-    </style>
-
-    <body>
-        <div class="pro">
-            <div class="container">
-
-
-
-                <h1 id="top">HTML Tutorial</h1>
-                <hr>
-                <p>Welcome to the HTML tutorial. Click on the topics below to start learning:</p>
-                <h2 style="color: red;">Topics</h2>
-                <ul>
-                    <li><a href="#intro">Introduction to HTML</a></li>
-                    <li><a href="#structure">HTML Document Structure</a></li>
-                    <li><a href="#heading">Heading</a></li>
-                    <li><a href="#paragraph">Paragraph</a></li>
-                    <li><a href="#formatting">Text Formatting</a></li>
-                    <li><a href="#links">Creating Links</a></li>
-                    <li><a href="#lists">Lists (Ordered and Unordered)</a></li>
-                    <li><a href="#images">Adding Images</a></li>
-                    <li><a href="#tables">Creating Tables</a></li>
-                    <li><a href="#forms">HTML Forms</a></li>
-                    <li><a href="#semantic">Semantic HTML</a></li>
-                </ul>
-
-
-
-                <hr>
-
-
-                <!-- conten -->
-
-                <h2 id="intro">Introduction to HTML</h2>
-                <p> An HTML document has the following basic structure</p>
-                <pre>
+        <div class="crad1">
+            <h3>Topics</h3>
+            <ul class="list-menu">
+                <li><a href="#intro">Introduction to HTML</a></li>
+                <li><a href="#structure">HTML Document <br> Structure</a></li>
+                <li><a href="#heading">Heading</a></li>
+                <li><a href="#paragraph">Paragraph</a></li>
+                <li><a href="#formatting">Text Formatting</a></li>
+                <li><a href="#links">Creating Links</a></li>
+                <li><a href="#lists">Lists (Ordered and <br> Unordered)</a></li>
+                <li><a href="#images">Adding Images</a></li>
+                <li><a href="#tables">Creating Tables</a></li>
+                <li><a href="#forms">HTML Forms</a></li>
+                <li><a href="#semantic">Semantic HTML</a></li>
+            </ul>
+        </div>
+        <div class="crad2">
+            <div class="text-all" id="top">
+                <div class="text">
+                    <h2 id="intro">Introduction to HTML</h2>
+                    <p> An HTML document has the following basic structure</p>
+                    <pre>
 &lt;!DOCTYPE html&gt;: ระบุว่าเป็นเอกสาร HTML5
 &lt;html&gt;: เป็นรากของเอกสาร HTML ทั้งหมด
 &lt;head&gt;: ส่วนที่ใช้เก็บข้อมูลเมตา เช่น &lt;title&gt; ชื่อหน้าเว็บ
@@ -83,61 +68,61 @@
                 ตัวอย่าง: &lt;h1&gt;Hello, World!&lt;/h1&gt;
                 &lt;img src="image.jpg" alt="A description of the image"&gt;
                 </pre>
-                <a href="#top">Back to Top</a>
+                    <a href="#top">Back to Top</a>
 
 
 
 
-                <hr>
-                <h2 id="structure">HTML Document Structure</h2>
-                <p>An HTML document has the following basic structure..<br>
-                    - HTML is the standard markup language for creating Web pages<br>
-                    - HTML describes the structure of a Web page<br>
-                    - HTML consists of a series of elements<br>
-                    - HTML elements tell the browser how to display the content<br>
-                    - HTML elements are represented by tags<br>
-                    - HTML tags label pieces of content such as "heading", "paragraph", "table", and so on<br>
-                    - Browsers do not display the HTML tags, but use them to render the content of the page<br>
-                    - HTML can embed programs written in a scripting language such as JavaScript, which affects the
-                    behavior and<br>
-                    content of web pages<br>
-                    - HTML is not a programming language, but a markup language</p>
-                <a href="#top">Back to Top</a>
+                    <hr>
+                    <h2 id="structure">HTML Document Structure</h2>
+                    <p class="text-document">An HTML document has the following basic structure..<br>
+                        - HTML is the standard markup language for creating Web pages<br>
+                        - HTML describes the structure of a Web page<br>
+                        - HTML consists of a series of elements<br>
+                        - HTML elements tell the browser how to display the content<br>
+                        - HTML elements are represented by tags<br>
+                        - HTML tags label pieces of content such as "heading", "paragraph", "table", and so on<br>
+                        - Browsers do not display the HTML tags, but use them to render the content of the page<br>
+                        - HTML can embed programs written in a scripting language such as JavaScript, which affects the
+                        behavior and<br>
+                        content of web pages<br>
+                        - HTML is not a programming language, but a markup language</p>
+                    <a href="#top">Back to Top</a>
 
 
-                <hr>
-                <h2 id="paragraph">Paragraph</h2>
-                <p>workshop <br>
-                    HTML headings are defined with the h1 to h6 tags...
-                </p>
-                
-                <pre>- &lt;h1&gt;: Heading 1
+                    <hr>
+                    <h2 id="paragraph">Paragraph</h2>
+                    <p>workshop <br>
+                        HTML headings are defined with the h1 to h6 tags...
+                    </p>
+
+                    <pre>- &lt;h1&gt;: Heading 1
 - &lt;h2&gt;: Heading 2
 - &lt;h3&gt;: Heading 3
  - &lt;h4&gt;: Heading 4
  - &lt;h5&gt;: Heading 5
  - &lt;h6&gt;: Heading 6</pre>
-                <a href="#top">Back to Top</a>
-                <hr>
+                    <a href="#top">Back to Top</a>
+                    <hr>
 
-                <h2 id="heading">Heading</h2>
-                <p>workshop
-                </p>
-                <a href="W03-01-heading.html">Workshop1</a>
-                <a href="W03-02-heading.html">| Workshop2</a>
-                <pre>HTML paragraphs are defined with the p tag... <br>
+                    <h2 id="heading">Heading</h2>
+                    <p>workshop
+                    </p>
+                    <a href="W03-01-heading.html">Workshop1</a>
+                    <a href="W03-02-heading.html">| Workshop2</a>
+                    <pre>HTML paragraphs are defined with the p tag... <br>
                     - &lt;p&gt;: Paragraph
                 </pre>
 
-                <hr>
+                    <hr>
 
-                <h2 id="formatting">Text Formatting</h2>
-                </h2>
-                <a href="W04-01-formatting.html">workshop</a>
-                </p>
-                <p>HTML provides various elements to format text...
-                </p>
-                <pre>- &lt;h1&gt; to &lt;h6&gt;: Headings
+                    <h2 id="formatting">Text Formatting</h2>
+                    </h2>
+                    <a href="W04-01-formatting.html">workshop</a>
+                    </p>
+                    <p>HTML provides various elements to format text...
+                    </p>
+                    <pre>- &lt;h1&gt; to &lt;h6&gt;: Headings
 - &lt;p&gt;: Paragraph
 - &lt;pre&gt;: Preformatted text
 - &lt;b&gt;: Bold text
@@ -158,14 +143,14 @@
 - &lt;q&gt;: Inline quotation
 - &lt;code&gt;: Code snippet
                 </pre>
-                <a href="#top">Back to Top</a>
-                <hr>
+                    <a href="#top">Back to Top</a>
+                    <hr>
 
-                <h2 id="links">Creating Links</h2 </h2>
-                <a href="W06_01_link-image.html">workshop</a>
-                
-                <p>HTML links are defined with the <a> tag...</p>
-                <pre>- &lt;a href="url" target=""&gt;Link text&lt;/a&gt;
+                    <h2 id="links">Creating Links</h2 </h2>
+                    <a href="W06_01_link-image.html">workshop</a>
+
+                    <p>HTML links are defined with the <a> tag...</p>
+                    <pre>- &lt;a href="url" target=""&gt;Link text&lt;/a&gt;
 - The href attribute specifies the URL of the page the link goes to
 - The target attribute specifies where to open the linked document
     - _self: Open the linked document in the same window/tab
@@ -185,14 +170,14 @@
     - Use the download attribute to create a download link
     - Example: &lt;a href="file.txt" download&gt;Download Text File&lt;/a&gt;
                 </pre>
-                <a href="#top">Back to Top</a>
-                <hr>
+                    <a href="#top">Back to Top</a>
+                    <hr>
 
-                <h2 id="lists">Lists (Ordered and Unordered)</h2>
-                </h2>
-                <p>workshop
-                </p>
-                <pre>HTML lists are defined with the &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt; tags...
+                    <h2 id="lists">Lists (Ordered and Unordered)</h2>
+                    </h2>
+                    <p>workshop
+                    </p>
+                    <pre>HTML lists are defined with the &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt; tags...
 - &lt;ul&gt;: Unordered list
 - &lt;ol&gt;: Ordered list
 - &lt;li&gt;: List item
@@ -233,15 +218,15 @@
 - Example: &lt;ol style="list-style-type: upper-roman;"&gt;
 - Example: &lt;ol style="list-style-type: lower-roman;"&gt;
                 </pre>
-                <a href="#top">Back to Top</a>
-                <hr>
+                    <a href="#top">Back to Top</a>
+                    <hr>
 
-                <h2 id="images">Adding Images</h2>
-                </h2>
-                <p>workshop
-                </p>
-                <p>HTML images are defined with the &l timg &gt tag...</p>
-                <pre>- &lt;img src="url" alt="description"&gt;
+                    <h2 id="images">Adding Images</h2>
+                    </h2>
+                    <p>workshop
+                    </p>
+                    <p>HTML images are defined with the &l timg &gt tag...</p>
+                    <pre>- &lt;img src="url" alt="description"&gt;
 - The src attribute specifies the URL of the image
 - The alt attribute provides a description of the image
 - The width and height attributes provide the size of the image
@@ -280,30 +265,30 @@ height: 150px;
 object-fit: cover;
 }
                 </pre>
-                <a href="#top">Back to Top</a>
+                    <a href="#top">Back to Top</a>
 
-                <hr>
-                <h2 id="tables">Creating Tables</h2>
-                </h2>
-                <p>workshop1 <br>
-                    Workshop 2
-                </p>
-                <pre>HTML tables are defined with the &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt; tags...
+                    <hr>
+                    <h2 id="tables">Creating Tables</h2>
+                    </h2>
+                    <p>workshop1 <br>
+                        Workshop 2
+                    </p>
+                    <pre>HTML tables are defined with the &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt; tags...
 - &lt;table&gt;: Table
 - &lt;tr&gt;: Table row
 - &lt;th&gt;: Table header
 - &lt;td&gt;: Table data/cell
                 </pre>
-                <a href="#top">Back to Top</a>
-                <hr>
+                    <a href="#top">Back to Top</a>
+                    <hr>
 
-                <h2 id="forms">HTML Forms</h2>
-                </h2>
-                <p>workshop1 <br>
-                    Workshop 2
-                </p>
-                <p>HTML forms are defined with the &lt form &gt tag...</p>
-                <pre>หัวข ้อเกี่ยวกับฟอร์ม
+                    <h2 id="forms">HTML Forms</h2>
+                    </h2>
+                    <p>workshop1 <br>
+                        Workshop 2
+                    </p>
+                    <p>HTML forms are defined with the &lt form &gt tag...</p>
+                    <pre>หัวข ้อเกี่ยวกับฟอร์ม
 1. โครงสร้างพื้นฐานของฟอร์ม
 - &lt;form>: ใชเ้ป็นตวัครอบขอ้มูลในฟอรม์
 - action และ method (GET/POST): การก าหนดปลายทางและวธิสี ง่ ขอ้มลู
@@ -334,43 +319,73 @@ radio, checkbox, date, file
 - การสง่ ขอ้มลู ไปยังเซริฟ์ เวอร์
 - การใช ้JavaScript (เชน่ onsubmit)
                 </pre>
-                <a href="#top">Back to Top</a>
-                <hr>
-                <h2 id="semantic">Semantic HTML</h2>
-                <p>Semantic HTML elements clearly define the content of a web page...</p>
-                <pre>- &lt;header&gt;: Defines a header for a document or section
+                    <a href="#top">Back to Top</a>
+                    <hr>
+                    <h2 id="semantic">Semantic HTML</h2>
+                    <p>Semantic HTML elements clearly define the content of a web page...</p>
+                    <pre>- &lt;header&gt;: Defines a header for a document or section
 - &lt;nav&gt;: Defines navigation links
 - &lt;section&gt;: Defines a section in a document
 - &lt;article&gt;: Defines an article
 - &lt;aside&gt;: Defines content aside from the page content
 - &lt;footer&gt;: Defines a footer for a document or section
                 </pre>
-                <hr>
+                    <hr>
 
-                <h2>Creating Tables
-                </h2>
-                <p>workshop1 <br>
-                    Workshop 2
-                </p>
-                <pre>HTML tables are defined with the &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt; tags...
+                    <h2>Creating Tables
+                    </h2>
+                    <p>workshop1 <br>
+                        Workshop 2
+                    </p>
+                    <pre>HTML tables are defined with the &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt; tags...
 - &lt;table&gt;: Table
 - &lt;tr&gt;: Table row
 - &lt;th&gt;: Table header
 - &lt;td&gt;: Table data/cell
                 </pre>
-                <a href="#top">Back to Top</a>
-
-                <hr>
-                
-                <dev>
-                    <p class="text-center">
-                    <a  href="https://www.w3schools.com/html/default.asp">Learm more about HTML</a>
-                    </p>
-                    <p class="text-center">&copy; 2026 Created by :684259026: Nantawat Oondi</p>
-                </dev>
-
+                    <a href="#top">Back to Top</a>
+                </div>
             </div>
         </div>
-    </body>
+
+    </div>
+
+    <div class="knowledge-box">
+
+        <div class="info-icon">
+        </div>
+
+        <div class="knowledge-content">
+            <h3>เกร็ดความรู้</h3>
+
+            <p>
+                แท็ก &lt;a&gt; ใช้สำหรับสร้างลิงก์ (Hyperlink)
+                เพื่อเชื่อมโยงไปยังหน้าเว็บ ไฟล์ หรือที่อยู่ข้อมูลต่าง ๆ
+                โดยใช้แอตทริบิวต์ <span>href</span> ระบุปลายทางของลิงก์
+                แท็ก &lt;img&gt; ใช้สำหรับแทรกรูปภาพ โดยใช้แอตทริบิวต์
+                <span>src</span> ระบุแหล่งที่อยู่ของไฟล์รูปภาพ และ
+                <span>alt</span> ระบุข้อความอธิบายรูปภาพ
+                ซึ่งสำคัญต่อการเข้าถึง (Accessibility)
+                และช่วยเมื่อรูปภาพไม่สามารถโหลดได้
+            </p>
+
+            <p>
+                CSS สามารถใช้ตกแต่งลิงก์ด้วยตัว <span>link color</span>
+                เอฟเฟกต์เมื่อ <span>hover</span> ขนาดของรูปภาพ
+                ขอบ <span>border</span> มุมโค้ง <span>border-radius</span>
+                และเงา <span>box-shadow</span> และอื่น ๆ
+                เพื่อให้หน้าเว็บมีความสวยงามและใช้งานง่ายขึ้น
+            </p>
+        </div>
+
+        <div class="knowledge-icon">
+            <div>💡</div>
+            <div>📚</div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
 
 </html>
