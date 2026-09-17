@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/pest.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="../CSS/pest02-style.css">
+</head>
+
+<body>
+    <!-- header Section -->
+    <header class="header">
+        <div class="header-content">
+            <h1 class="header-title">👣คู่มือสัตว์เลี้ยง</h1>
+            <p class="header-subtitle">ค้นพบสัตว์เลี้ยงที่เหมาะกับคุณ</p>
+        </div>
+    </header>
+
+    <!-- redio btn -->
+     
+         <input class="filter-radio" type="radio" id="filter-all" name="fav-pet" checked>
+         <input class="filter-radio" type="radio" id="filter-dog" name="fav-pet">
+         <input class="filter-radio" type="radio" id="filter-cat" name="fav-pet">
+         <input class="filter-radio" type="radio" id="filter-bird" name="fav-pet" >
+         <input class="filter-radio" type="radio" id="filter-fish" name="fav-pet" >
+         <input class="filter-radio" type="radio" id="filter-small-pet" name="fav-pet" >
+     
+
+    <!-- Navber -->
+    <!-- Navbar -->
+    <!-- <nav> -->
+    <nav class="category-nav">
+        <label for="filter-all"><i class="fa-solid fa-house-tsunami"></i> ทั้งหมด</label>
+        <label for="filter-dog"><i class="fa-solid fa-dog"></i> หมา</label>
+        <label for="filter-cat"><i class="fa-solid fa-cat"></i> แมว</label>
+        <label for="filter-fish"><i class="fa-solid fa-fish"></i> ปลา</label>
+        <label for="filter-bird"><i class="fa-solid fa-dove"></i> นก</label>
+        <label for="filter-small-pet"><i class="fa-solid fa-otter"></i> สัตว์ขนาดเล็ก</label>
+
+
+
+        <!-- <a href="index.html" class="active"><i class="fa-solid fa-house-tsunami"></i> ทั้งหมด</a>
+        <a href="dog.html"><i class="fa-solid fa-dog"></i> หมา</a>
+        <a href="cat.html"><i class="fa-solid fa-cat"></i> แมว</a>
+        <a href="fish.html"><i class="fa-solid fa-fish"></i> ปลา</a>
+        <a href="bird.html"><i class="fa-solid fa-dove"></i> นก</a>
+        <a href="small.html"><i class="fa-solid fa-otter"></i> สัตว์ขนาดเล็ก</a> -->
+    </nav>
+    
+
+    <main class="container">
+        <h2 class="page-title"> 
+            <span class="category-hide show-all">สัตว์เลี้ยงทั้งหมด</span>
+            <span class="category-hide show-dog">หมวดหมู่หมา</span>
+            <span class="category-hide show-cat">หมวดหมู่แมว</span>
+            <span class="category-hide show-bird">หมวดหมู่ปลา</span>
+            <span class="category-hide show-fish">หมวดหมู่นก</span>
+            <span class="category-hide show-small-pet">หมวดหมู่สัตว์ขนาดเล็ก</span>
+        </h2>
+        <div class="pet-grid">
+            <article class="pet-card show-dog">
+                <img src="https://images.unsplash.com/photo-1734966213753-1b361564bab4?auto=format&amp;fit=crop&amp;w=1080&amp;q=80"
+                    alt="โกลเด้น รีทรีฟเวอร์">
+
+                <div class="pet-content">
+                    <h2>โกลเด้น รีทรีฟเวอร์</h2>
+                    <p class="breed">Golden Retriever</p>
+                    <p>สุนัขที่เป็นมิตร ฉลาด ภักดี และรักครอบครัว</p>
+                    <p><a href="dog.html">ดูข้อมูลสุนัขเพิ่มเติม</a></p>
+                </div>
+            </article>
+
+            <article class="pet-card show-dog">
+                <img src="https://images.unsplash.com/photo-1590419690008-905895e8fe0d?auto=format&amp;fit=crop&amp;w=1080&amp;q=80"
+                    alt="ไซบีเรียน ฮัสกี้">
+
+                <div class="pet-content ">
+                    <h2>ไซบีเรียน ฮัสกี้</h2>
+                    <p class="breed">Siberian Husky</p>
+                    <p>สุนัขพลังงานสูง เป็นมิตร และต้องออกกำลังกายมาก</p>
+                    <p><a href="dog.html">ดูข้อมูลสุนัขเพิ่มเติม</a></p>
+                </div>
+            </article>
+
+            <article class="pet-card show-cat">
+                <img src="https://images.unsplash.com/photo-1568152950566-c1bf43f4ab28?auto=format&amp;fit=crop&amp;w=1080&amp;q=80"
+                    alt="แมวสยาม">
+
+                <div class="pet-content">
+                    <h2>แมวสยาม</h2>
+                    <p class="breed">Siamese Cat</p>
+                    <p>แมวพันธุ์ไทยที่ช่างพูดและผูกพันกับเจ้าของ</p>
+                    <p><a href="cat.html">ดูข้อมูลแมวเพิ่มเติม</a></p>
+                </div>
+            </article>
+
+            <article class="pet-card show-cat">
+                <img src="https://images.unsplash.com/photo-1585137173132-cf49e10ad27d?auto=format&amp;fit=crop&amp;w=1080&amp;q=80"
+                    alt="แมวเปอร์เซีย">
+
+                <div class="pet-content">
+                    <h2>แมวเปอร์เซีย</h2>
+                    <p class="breed">Persian Cat</p>
+                    <p>แมวขนยาวที่มีนิสัยสงบและอ่อนโยน</p>
+                    <p><a href="cat.html">ดูข้อมูลแมวเพิ่มเติม</a></p>
+                </div>
+            </article>
+
+            <article class="pet-card show-bird">
+                <img src="https://images.unsplash.com/photo-1584888890205-9b49eaf0c660?auto=format&amp;fit=crop&amp;w=1080&amp;q=80"
+                    alt="นกแก้วแมคคอว์">
+
+                <div class="pet-content">
+                    <h2>นกแก้วแมคคอว์</h2>
+                    <p class="breed">Macaw Parrot</p>
+                    <p>นกสีสันสวยงาม ฉลาด และชอบเข้าสังคม</p>
+                    <p><a href="bird.html">ดูข้อมูลนกเพิ่มเติม</a></p>
+                </div>
+            </article>
+
+            <article class="pet-card show-fish">
+                <img src="https://images.unsplash.com/photo-1592072467526-0506c6530493?auto=format&amp;fit=crop&amp;w=1080&amp;q=80"
+                    alt="ปลาทอง">
+
+                <div class="pet-content">
+                    <h2>ปลาทอง</h2>
+                    <p class="breed">Goldfish</p>
+                    <p>สัตว์เลี้ยงที่สงบและเหมาะกับผู้เริ่มต้น</p>
+                    <p><a href="fish.html">ดูข้อมูลปลาเพิ่มเติม</a></p>
+                </div>
+            </article>
+
+            <article class="pet-card show-small-pet">
+                <img src="https://images.unsplash.com/photo-1622349817799-067c32295df2?auto=format&amp;fit=crop&amp;w=1080&amp;q=80"
+                    alt="กระต่าย">
+
+                <div class="pet-content">
+                    <h2>กระต่าย</h2>
+                    <p class="breed">Rabbit</p>
+                    <p>สัตว์เลี้ยงที่อ่อนโยน ขี้อาย และเป็นมิตร</p>
+                    <p><a href="small-pets.html">ดูสัตว์ขนาดเล็กเพิ่มเติม</a></p>
+                </div>
+            </article>
+
+            <article class="pet-card show-small-pet">
+                <img src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?auto=format&amp;fit=crop&amp;w=1080&amp;q=80"
+                    alt="หนูแฮมสเตอร์">
+
+                <div class="pet-content">
+                    <h2>หนูแฮมสเตอร์</h2>
+                    <p class="breed">Hamster</p>
+                    <p>สัตว์เลี้ยงขนาดเล็ก ขี้เล่น และเหมาะกับพื้นที่จำกัด</p>
+                    <p><a href="small-pets.html">ดูสัตว์ขนาดเล็กเพิ่มเติม</a></p>
+                </div>
+            </article>
+        </div>
+
+        <section class="info-section">
+            <h2 class="info-title">"💡คำเนะนำในการเลือกสัตว์เลี้ยง"</h2>
+
+            <div class="info-grid">
+
+
+                <article class="info-card">
+
+                    <div class="info-blue">
+                        <h3>พิจารณาไลฟ์สไตล์ของคุณ</h3>
+                        <p>หากคุณมีเวลาจำกัดหรือมีพื้นที่อยู่อาศัยที่จำกัด
+                            ควรเลือกสัตว์เลี้ยงที่เหมาะกับไลฟ์สไตล์และความสนใจของคุณ</p>
+                    </div>
+                </article>
+
+                <article class="info-card">
+
+                    <div class="info-purple ">
+                        <h3>พื้นที่อยู่อาศัย</h3>
+                        <p>เลือกเลี้ยงสัตว์ที่สามารถอยู่ได้อย่างเหมาะสมกับพื้นที่ของคุณ เช่น กระต่าย
+                            หรือหนูแฮมสเตอร์
+                        </p>
+                    </div>
+                </article>
+
+                <article class="info-card">
+
+                    <div class="info-green ">
+                        <h3>งบประมาณ</h3>
+                        <p>ควรพิจารณาค่าอาหาร อุปกรณ์ และค่าใช้จ่ายในการดูแลสัตว์ รวมถึงค่าใช้จ่ายอื่น ๆ</p>
+                    </div>
+                </article>
+
+                <article class="info-card">
+
+                    <div class="info-orange ">
+                        <h3>อายุขัยของสัตว์</h3>
+                        <p>หากคุณสามารถมีเวลาเลี้ยงได้หลายปี ควรพิจารณาอายุขัยของสัตว์ เพราะสัตว์บางชนิดมีอายุยืนถึง
+                            10–20 ปี จึงควรพิจารณาภาระผูกพันระยะยาว</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!--  เรียนรู้การสร้าง radio button -->
+        <section class="form-radio">
+
+            <h2>ทดลองเลือกสัตว์ที่คุณสนใจ</h2>
+            <p>คลิกข้อความหรือปุ่มวงกลมเพื่อเลือกประเภทสัตว์ที่คุณสนใจ </p>
+
+            <form action="" method="get / post">
+                <fieldset>
+                    <legend>เลือกประเภทสัตว์เลี้ยง</legend>
+
+                    <div class="radio-option">
+
+                        <div class="radio-item">
+                            <input type="radio" name="fav-pet" id="fav-dog" value="สุนัข">
+                            <label for="fav-dog">สุนัข</label>
+                        </div>
+
+                        <div class="radio-item">
+                            <input type="radio" name="fav-pet" id="fav-cat" value="แมว">
+                            <label for="fav-cat">แมว</label>
+                        </div>
+
+                        <div class="radio-item">
+                            <input type="radio" name="fav-pet" id="fav-bird" value="นก">
+                            <label for="fav-bird">นก</label>
+                        </div>
+
+                        <div class="radio-item">
+                            <input type="radio" name="fav-pet" id="fav-fish" value="ปลา">
+                            <label for="fav-fish">ปลา</label>
+                        </div>
+
+                        <div class="radio-item">
+                            <input type="radio" name="fav-pet" id="fav-small" value="สัตว์ขนาดเล็ก">
+                            <label for="fav-small">สัตว์ขนาดเล็ก</label>
+                        </div>
+
+
+                    </div>
+
+                    <button type="reset" class="reset-btn">ล้างตัวเลือก</button>
+
+                </fieldset>
+
+            </form>
+        </section>
+
+
+    </main>
+
+
+
+
+
+    <footer>
+        <p>&copy; 2026 คู่มือสัตว์เลี้ยง</p>
+    </footer>
+
+
+</body>
+
+</html>
