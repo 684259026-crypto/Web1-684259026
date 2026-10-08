@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fdfcfc;
+
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+body {
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+}
+
+
+.container {
+    /* max-width: 1100px; */
+        width: 100%;
+    background-color: #fdfcfc;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /* margin-left: 70px; */
+    /* margin: 0 300px; */
+}
+
+.main-section {
+    /* width: 100%; */
+    background-color: #f4f4f4;
+    
+}
+
+
+
+.navber {
+    background-color: white;
+    display: flex ;
+
+    justify-content: space-between;
+    padding: 20px ;
+
+    /* width: 100%; */
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.12);
+    /* border: solid black 1px; */
+
+}
+.navber h2 {
+   color: blue;
+   margin-left: 30px;
+
+   align-items: center;
+   display: flex;
+}
+
+
+
+.menu {
+    display: flex;
+    list-style: none;
+
+    align-items: center;
+    /* margin-right: 200px; */
+}
+.menu li{
+    margin: 16px;
+    
+}
+
+
+.main-box {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 50px;
+    
+}
+
+.box1 {
+    background-color: rgb(153, 227, 250);
+    width: 300px;
+    height: 250px;
+
+    border-radius: 10px;
+
+    margin-right: 50px;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.12);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.box1 h3 {
+    margin: 10px;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: rgb(19, 17, 17);
+}
+.box1 p {
+    margin: 10px;
+    /* font-size: 30px; */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.btn {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+
+    background-color: royalblue;
+    border: none;
+
+    margin: 5px;
+
+    border-radius: 10px;
+    color: white;
+}
+
+.box2 {
+    background-color: rgb(255, 255, 255);
+    width: 700px;
+    height: 250px;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.12);
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+.text {
+    display: flex;
+}
+
+.email {
+    margin-left: 220px;
+
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.btn1 input{
+    /* padding: 10px; */
+    width: 250px;
+    height: 40px;
+    margin: 0 50px 0 0;
+    border-radius: 5px;
+
+    border: solid rgb(17, 14, 14) 1px;
+
+}
+
+.radio {
+    padding: 15px 0;
+}
+.radio input{
+    /* padding: 15px 0; */
+    margin-right: 10px;
+}
+
+.btn-submit {
+    padding: 10px;
+    border: none;
+    background-color: royalblue;
+    border-radius: 10px;
+    color: white;
+
+    width: 100%;
+}
+
+.form p {
+    padding: 10px;
+}
+
+.footer-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-box h2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 5px 10px;
+}
+
+.card1 {
+    background-color: rgb(226, 185, 0) ;
+    border-radius: 10px;
+    overflow: hidden;
+
+    /* padding: 30px; */
+    margin: 0 10px;
+}
+
+.card1 h1   {
+    padding: 20px;
+    /* background-color: rgb(248, 225, 19); */
+    margin: 0 10px;
+    width: ;
+
+    border-radius: 10px;
+}
+.card1 p   {
+    background-color: white;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.card2 {
+    background-color: rgb(226, 185, 0) ;
+    border-radius: 10px;
+    overflow: hidden;
+
+    /* padding: 30px; */
+    margin: 0 10px;
+}
+
+.card2 h1   {
+    padding: 20px;
+    /* background-color: rgb(248, 225, 19); */
+    margin: 0 10px;
+    width: ;
+
+    border-radius: 10px;
+}
+.card2 p   {
+    background-color: white;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.card3 {
+    background-color: rgb(226, 185, 0) ;
+    border-radius: 10px;
+    overflow: hidden;
+
+    /* padding: 30px; */
+    margin: 0 10px;
+}
+.card3 h1   {
+    padding: 20px;
+    /* background-color: rgb(248, 225, 19); */
+    margin: 0 10px;
+    width: ;
+
+    border-radius: 10px;
+}
+.card3 p   {
+    background-color: white;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+
+
+
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+    margin: 15px 0;
+    padding: 20px;
+}
+
+ @media (max-width: 900px) {
+
+        .navber h2{
+            margin-left: 200px;
+        }
+
+        .menu {
+            margin-right: 200px;
+        }
+
+        .box1 {
+
+        }
+    }
+ @media (max-width: 600px) {
+
+        .navber {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .navber h2{
+            /* flex-direction: column; */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu {
+            flex-direction: column;
+            }
+
+            .main-box {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .text{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .btn1{
+                flex-direction: column;
+                
+            }
+            .btn1 h3{
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+            }
+
+            .radio {
+                display: flex;
+                flex-direction: column;
+            }
+
+       
+    }
+
+
+    </style>
+</head>
+    
+
+<body>
+
+    <main class="container">
+        <section class="main-section">
+
+            <div class="main-navber">
+                <div class="navber">
+                    <h2>&copy;SE026:Nantawat Oondi</h2>
+
+                    <ul class="menu">
+                        <li>หน้าเเรก</li>
+                        <li>กิจกรรม</li>
+                        <li>ติดต่อเรา</li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="main-box">
+                <div class="box1">
+
+                    <h3>ค้นพบกิจกรรมใหม่ <br>ในรั่วมหาวิทยาลัย</h3>
+
+                    <p>เดิมประสบการณ์นอกห้องเรียนผ่าน<br>กิจกรรมสร้างสรรค์ พร้อมพบเพื่อน
+                        <br>ใหม่เเละพัฒนาทักษะที่คุณสนใจ
+                    </p>
+
+
+                    <button class="btn">ดูกิจกรรมทั้งหมด</button>
+
+                </div>
+
+
+                <div class="box2">
+                    <h4>แจ้งความสนใจในการเรียน</h4>
+
+                    <div class="button">
+                        <form action="" class="form">
+                            <div class="text">
+                                <label for="email">ชื่อ-นามสกุล</label><br>
+                                <label for="email" class="email">อีเมล</label>
+                            </div>
+
+                            <div class="btn1">
+                                <input type="text" id="lasname" class="Email" placeholder="ชื่อของคุณ" required>
+                                <input type="text" id="lasname" class="Email" placeholder="you@example.com" required>
+                            </div>
+
+
+
+                            <p>กิจกรรมที่สนใจ</p>
+                            <div class="radio">
+                                <input type="radio" value="ART">
+
+                                <label for="">ART</label>
+
+                                <input type="radio" value="ART">
+                                <label for="">SPORT</label>
+
+                                <input type="radio" value="ART">
+                                <label for="">GREEN</label>
+                            </div>
+
+                            <button type="submit" class="btn-submit">ส่งข้อมูล</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer-box">
+                <h2>กิจกรรมเนะนำ</h2>
+
+                <div class="main-card">
+                    <div class="card1">
+                        <div class="h1"></div>
+                        <h1>ART</h1>
+                        <p>Creative Art Day</p>
+                    </div>
+
+                    <div class="card2">
+                        <h1>{ SPORT }</h1>
+
+                        <p>Campus Sports Day</p>
+                    </div>
+
+                    <div class="card3">
+                        <h1> { GEE }</h1>
+                        <p>Green Campus Day</p>
+                    </div>
+                </div>
+
+            </footer>
+
+            <footer class="footer">
+                <p>&copy; 2026 SE026: Nantawat Oondi</p>
+                <p>นาย นันทวัฒน์ อ่อนดี</p>
+            </footer>
+        </section>
+    </main>
+
+</body>
+
+</html>
