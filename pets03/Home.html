@@ -33,22 +33,22 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">ทั้งหมด</a>
+                            <button type="button" class="nav-link active" aria-current="page" onclick="selectCategory('all',this)">ทั้งหมด</button>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">หมา</a>
+                            <button type="button" class="nav-link" onclick="selectCategory('สุนัข',this)">หมา</button>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">แมว</a>
+                            <button type="button" class="nav-link" onclick="selectCategory('แมว',this)">แมว</button>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">นก</a>
+                            <button type="button" class="nav-link" onclick="selectCategory('นก',this)">นก</button>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ปลา</a>
+                            <button type="button" class="nav-link" onclick="selectCategory('ปลา',this)">ปลา</button>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">สัตขนาดเล็ก</a>
+                            <button type="button" class="nav-link" onclick="selectCategory('สัตว์เลี้ยงขนาดเล็ก',this)">สัตขนาดเล็ก</button>
                         </li>
                         <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -192,6 +192,8 @@
                         10–20 ปี จึงควรพิจารณาภาระผูกพันระยะยาว</p>
                 </div>
             </article>
+
+            
     
         </div>
     
@@ -201,7 +203,225 @@
     
     </section>
 
+     <div class="info-section" id="recommendationSection">
 
+                <h2 class="info-title">
+                    🔍 ค้นหาสัตว์เลี้ยงที่เหมาะกับคุณ
+                </h2>
+
+                <form id="petRecommendationForm">
+
+                    <!-- Row 1 -->
+                    <div class="row g-3 mb-3">
+
+                        <!-- Lifestyle -->
+                        <div class="col-md-6">
+                            <label for="lifestyle" class="form-label">
+                                ไลฟ์สไตล์ของคุณ:
+                            </label>
+
+                            <select id="lifestyle" name="lifestyle" class="form-select"  required>
+                                <option value="">เลือกไลฟ์สไตล์</option>
+                                <option value="active">ชอบกิจกรรมกลางแจ้ง กระฉับกระเฉง</option>
+                                <option value="moderate">กิจกรรมปานกลาง เวลาว่างพอสมควร</option>
+                                <option value="quiet">ชอบความเงียบ อยู่บ้านเป็นส่วนใหญ่</option>
+                                <option value="busy">ยุ่งมาก เวลาจำกัด</option>
+                            </select>
+                        </div>
+
+
+                        <!-- Budget -->
+                        <div class="col-md-6">
+                            <label for="budget" class="form-label">
+                                งบประมาณต่อเดือน:
+                            </label>
+
+                            <select id="budget" name="budget" class="form-select" required>
+                                <option value="">เลือกงบประมาณ</option>
+                                <option value="low">น้อยกว่า 1,000 บาท</option>
+                                <option value="medium">1,000 - 3,000 บาท</option>
+                                <option value="high">3,000 - 5,000 บาท</option>
+                                <option value="premium">มากกว่า 5,000 บาท</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <!-- Row X -->
+                    <!-- <div class="row g-3 mb-3">
+
+                       
+                        <div class="col-md-6">
+                            <label for="experience" class="form-label">
+                                ประสบการณ์เลี้ยงสัตว์:Experience
+                            </label>
+
+                            <select id="experience" name="experience" class="form-select" required>
+                                <option value="">เลือกประสบการณ์</option>
+                                <option value="beginner">ไม่มีประสบการณ์</option>
+                                <option value="some">มีประสบการณ์บ้าง</option>
+                                <option value="experienced">มีประสบการณ์มาก</option>
+                                <option value="expert">ผู้เชี่ยวชาญ</option>
+                            </select>
+                        </div>
+
+                       
+                        <div class="col-md-6">
+                            <label for="livingSpace" class="form-label">
+                                พื้นที่อยู่อาศัย: Living Space
+                            </label>
+
+                            <select id="livingSpace" name="livingSpace" class="form-select" required>
+                                <option value="">เลือกพื้นที่อยู่อาศัย</option>
+                                <option value="house-large">บ้านใหญ่พร้อมสวน</option>
+                                <option value="house-small">บ้านขนาดเล็ก</option>
+                                <option value="condo">คอนโด/อพาร์ตเมนต์</option>
+                                <option value="studio">ห้องสตูดิโอ</option>
+                            </select>
+                        </div>
+                    </div> -->
+
+
+                    <!-- Row 2 : Time -->
+                    <div class="mb-4">
+
+                        <label class="form-label">เวลาว่างต่อวัน:</label>
+
+                        <div class="d-flex flex-wrap gap-3">
+
+                            <div class="form-check">
+                                <input class="form-check-input"
+                                    type="radio"
+                                    name="timeAvailable"
+                                    id="timeLess1"
+                                    value="less1"
+                                    required>
+
+                                <label class="form-check-label" for="timeLess1">
+                                    น้อยกว่า 1 ชั่วโมง
+                                </label>
+                            </div>
+
+
+                            <div class="form-check">
+                                <input class="form-check-input"
+                                    type="radio"
+                                    name="timeAvailable"
+                                    id="time1to3"
+                                    value="1to3">
+
+                                <label class="form-check-label" for="time1to3">
+                                    1-3 ชั่วโมง
+                                </label>
+                            </div>
+
+
+                            <div class="form-check">
+                                <input class="form-check-input"
+                                    type="radio"
+                                    name="timeAvailable"
+                                    id="time3to6"
+                                    value="3to6">
+
+                                <label class="form-check-label" for="time3to6">
+                                    3-6 ชั่วโมง
+                                </label>
+                            </div>
+
+
+                            <div class="form-check">
+                                <input class="form-check-input"
+                                    type="radio"
+                                    name="timeAvailable"
+                                    id="timeMore6"
+                                    value="more6">
+
+                                <label class="form-check-label" for="timeMore6">
+                                    มากกว่า 6 ชั่วโมง
+                                </label>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Row 3 : Preferences -->
+                    <div class="mb-4">
+                        <label class="form-label">ความต้องการพิเศษ:</label>
+
+                        <div class="d-flex flex-wrap gap-3">
+                            <div class="form-check">
+                                <input class="form-check-input"
+                                    type="checkbox"
+                                    name="preferences"
+                                    id="prefQuiet"
+                                    value="quiet">
+                                <label class="form-check-label" for="prefQuiet">
+                                    เงียบ ไม่ส่งเสียงดัง
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input"
+                                    type="checkbox"
+                                    name="preferences"
+                                    id="prefSocial"
+                                    value="social">
+                                <label class="form-check-label" for="prefSocial">
+                                    เข้ากับคนง่าย
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input"
+                                    type="checkbox"
+                                    name="preferences"
+                                    id="prefLowMaintenance"
+                                    value="lowMaintenance">
+                                <label class="form-check-label" for="prefLowMaintenance">
+                                    ดูแลง่าย
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input"
+                                    type="checkbox"
+                                    name="preferences"
+                                    id="prefPlayful"
+                                    value="playful">
+                                <label class="form-check-label" for="prefPlayful">
+                                    ชอบเล่น กระฉับกระเฉง
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input"
+                                    type="checkbox"
+                                    name="preferences"
+                                    id="prefCuddly"
+                                    value="cuddly">
+                                <label class="form-check-label" for="prefCuddly">
+                                    ชอบกอด อ่อนโยน
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Buttons -->
+                    <div class="d-flex flex-wrap gap-2">
+                        <button type="submit" class="btn btn-primary">
+                            🔍 ค้นหาสัตว์เลี้ยงที่เหมาะสม
+                        </button>
+
+                        <button type="reset" class="btn btn-outline-secondary">
+                            🔄 เริ่มใหม่
+                        </button>
+                    </div>
+                </form>
+
+            </div>
 
     <footer class="footer mt-auto py-3 bg-body-tertiary">
         <div class="container-fluid text-center"> <span class="text-body-secondary">&copy; 2026 คู่มือสัตว์เลี้ยง</span> </div>
