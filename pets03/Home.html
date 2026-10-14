@@ -22,18 +22,19 @@
     <header class="header">
 
         <!-- navber -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">👣คู่มือสัตว์เลี้ยง</a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            <div class="container-fluid ">
+                <a class="navbar-brand  " href="#">👣คู่มือสัตว์เลี้ยง</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent mt-4">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <button type="button" class="nav-link active" aria-current="page" onclick="selectCategory('all',this)">ทั้งหมด</button>
+                            <button type="button" class="nav-link active" aria-current="page"
+                                onclick="selectCategory('all',this)">ทั้งหมด</button>
                         </li>
                         <li class="nav-item">
                             <button type="button" class="nav-link" onclick="selectCategory('สุนัข',this)">หมา</button>
@@ -48,7 +49,8 @@
                             <button type="button" class="nav-link" onclick="selectCategory('ปลา',this)">ปลา</button>
                         </li>
                         <li class="nav-item">
-                            <button type="button" class="nav-link" onclick="selectCategory('สัตว์เลี้ยงขนาดเล็ก',this)">สัตขนาดเล็ก</button>
+                            <button type="button" class="nav-link"
+                                onclick="selectCategory('สัตว์เลี้ยงขนาดเล็ก',this)">สัตขนาดเล็ก</button>
                         </li>
                         <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -71,7 +73,7 @@
 
                     </ul>
                     <!-- ปุ่ม Dark/light Mode -->
-                    
+
                     <button id="themeToggle" class="btn btn-secondary">
                         🌙 Dark
                     </button>
@@ -134,76 +136,69 @@
 
 
 
+
     <main class="main">
         <div class="container">
 
-            <!-- ปุ่มกดเลือกหมวดหมู่สัตว์ -->
-            <div class="category-filter" id="categoryFilter">
-                <!-- javascript  จะ rander เนื้อหาตรงนี้ -->
+            <!-- ปุ่มเลือกหมวดหมู่สัตว์ -->
+            <div class="category-filter" id="categoryFilter" >
             </div>
 
-            <!-- การ์ดภาพสัตว์ -->
+            <!-- การ์ดสัตว์ -->
             <div class="pet-grid" id="petGrid">
-                <!-- javascript  จะ rander เนื้อหาตรงนี้ -->
-                
             </div>
-        </div>
-    </main>
+
+            <!-- คำแนะนำในการเลือกสัตว์เลี้ยง -->
+            <section class="info-section">
+
+                <h2 class="info-title">
+                    💡 คำแนะนำในการเลือกสัตว์เลี้ยง
+                </h2>
+
+                <div class="info-grid">
+
+                    <!-- กล่องที่ 1 -->
+                    <article class="info-card info-blue">
+                        <h3>พิจารณาไลฟ์สไตล์</h3>
+                        <p>
+                            เลือกสัตว์เลี้ยงให้เหมาะกับกิจวัตรประจำวัน
+                            และเวลาที่คุณมี
+                        </p>
+                    </article>
+
+                    <!-- กล่องที่ 2 -->
+                    <article class="info-card info-purple">
+                        <h3>พื้นที่อยู่อาศัย</h3>
+                        <p>
+                            เลือกสัตว์ที่เหมาะกับพื้นที่
+                            เช่น บ้านหรือคอนโด
+                        </p>
+                    </article>
+
+                    <!-- กล่องที่ 3 -->
+                    <article class="info-card info-green">
+                        <h3>งบประมาณ</h3>
+                        <p>
+                            คำนึงถึงค่าอาหาร อุปกรณ์
+                            และค่าดูแลรักษา
+                        </p>
+                    </article>
+
+                    <!-- กล่องที่ 4 -->
+                    <article class="info-card info-orange">
+                        <h3>อายุขัยของสัตว์</h3>
+                        <p>
+                            พิจารณาระยะเวลาในการดูแล
+                            และความรับผิดชอบในระยะยาว
+                        </p>
+                    </article>
+
+                </div>
+            </section>
 
 
-    <section class=" info-section ">
-        <h2 class="info-title">"💡คำเนะนำในการเลือกสัตว์เลี้ยง"</h2>
-    
-        <div class="info-grid">
-    
-    
-            <article class="card card-body bg-body-tertiary info-primary">
-    
-                <div class=" text-title text-primar">
-                    <h3 class="text-dager">พิจารณาไลฟ์สไตล์ของคุณ</h3>
-                    <p>หากคุณมีเวลาจำกัดหรือมีพื้นที่อยู่อาศัยที่จำกัด
-                        ควรเลือกสัตว์เลี้ยงที่เหมาะกับไลฟ์สไตล์และความสนใจของคุณ</p>
-                </div>
-            </article>
-    
-            <article class="card card-body bg-body-tertiary info-primary">
-    
-                <div class=" ">
-                    <h3 class="text-wering">พื้นที่อยู่อาศัย</h3>
-                    <p>เลือกเลี้ยงสัตว์ที่สามารถอยู่ได้อย่างเหมาะสมกับพื้นที่ของคุณ เช่น กระต่าย
-                        หรือหนูแฮมสเตอร์
-                    </p>
-                </div>
-            </article>
-    
-            <article class="card card-body bg-body-tertiary info-primary">
-    
-                <div class="info-green ">
-                    <h3>งบประมาณ</h3>
-                    <p>ควรพิจารณาค่าอาหาร อุปกรณ์ และค่าใช้จ่ายในการดูแลสัตว์ รวมถึงค่าใช้จ่ายอื่น ๆ</p>
-                </div>
-            </article>
-    
-            <article class="card card-body bg-body-tertiary info-primary">
-    
-                <div class="info-orange ">
-                    <h3>อายุขัยของสัตว์</h3>
-                    <p>หากคุณสามารถมีเวลาเลี้ยงได้หลายปี ควรพิจารณาอายุขัยของสัตว์ เพราะสัตว์บางชนิดมีอายุยืนถึง
-                        10–20 ปี จึงควรพิจารณาภาระผูกพันระยะยาว</p>
-                </div>
-            </article>
 
-            
-    
-        </div>
-    
-    
-        
-    
-    
-    </section>
-
-     <div class="info-section" id="recommendationSection">
+            <div class="info-section" id="recommendationSection">
 
                 <h2 class="info-title">
                     🔍 ค้นหาสัตว์เลี้ยงที่เหมาะกับคุณ
@@ -220,7 +215,7 @@
                                 ไลฟ์สไตล์ของคุณ:
                             </label>
 
-                            <select id="lifestyle" name="lifestyle" class="form-select"  required>
+                            <select id="lifestyle" name="lifestyle" class="form-select" required>
                                 <option value="">เลือกไลฟ์สไตล์</option>
                                 <option value="active">ชอบกิจกรรมกลางแจ้ง กระฉับกระเฉง</option>
                                 <option value="moderate">กิจกรรมปานกลาง เวลาว่างพอสมควร</option>
@@ -290,12 +285,8 @@
                         <div class="d-flex flex-wrap gap-3">
 
                             <div class="form-check">
-                                <input class="form-check-input"
-                                    type="radio"
-                                    name="timeAvailable"
-                                    id="timeLess1"
-                                    value="less1"
-                                    required>
+                                <input class="form-check-input" type="radio" name="timeAvailable" id="timeLess1"
+                                    value="less1" required>
 
                                 <label class="form-check-label" for="timeLess1">
                                     น้อยกว่า 1 ชั่วโมง
@@ -304,10 +295,7 @@
 
 
                             <div class="form-check">
-                                <input class="form-check-input"
-                                    type="radio"
-                                    name="timeAvailable"
-                                    id="time1to3"
+                                <input class="form-check-input" type="radio" name="timeAvailable" id="time1to3"
                                     value="1to3">
 
                                 <label class="form-check-label" for="time1to3">
@@ -317,10 +305,7 @@
 
 
                             <div class="form-check">
-                                <input class="form-check-input"
-                                    type="radio"
-                                    name="timeAvailable"
-                                    id="time3to6"
+                                <input class="form-check-input" type="radio" name="timeAvailable" id="time3to6"
                                     value="3to6">
 
                                 <label class="form-check-label" for="time3to6">
@@ -330,10 +315,7 @@
 
 
                             <div class="form-check">
-                                <input class="form-check-input"
-                                    type="radio"
-                                    name="timeAvailable"
-                                    id="timeMore6"
+                                <input class="form-check-input" type="radio" name="timeAvailable" id="timeMore6"
                                     value="more6">
 
                                 <label class="form-check-label" for="timeMore6">
@@ -352,10 +334,7 @@
 
                         <div class="d-flex flex-wrap gap-3">
                             <div class="form-check">
-                                <input class="form-check-input"
-                                    type="checkbox"
-                                    name="preferences"
-                                    id="prefQuiet"
+                                <input class="form-check-input" type="checkbox" name="preferences" id="prefQuiet"
                                     value="quiet">
                                 <label class="form-check-label" for="prefQuiet">
                                     เงียบ ไม่ส่งเสียงดัง
@@ -363,10 +342,7 @@
                             </div>
 
                             <div class="form-check">
-                                <input class="form-check-input"
-                                    type="checkbox"
-                                    name="preferences"
-                                    id="prefSocial"
+                                <input class="form-check-input" type="checkbox" name="preferences" id="prefSocial"
                                     value="social">
                                 <label class="form-check-label" for="prefSocial">
                                     เข้ากับคนง่าย
@@ -374,21 +350,15 @@
                             </div>
 
                             <div class="form-check">
-                                <input class="form-check-input"
-                                    type="checkbox"
-                                    name="preferences"
-                                    id="prefLowMaintenance"
-                                    value="lowMaintenance">
+                                <input class="form-check-input" type="checkbox" name="preferences"
+                                    id="prefLowMaintenance" value="lowMaintenance">
                                 <label class="form-check-label" for="prefLowMaintenance">
                                     ดูแลง่าย
                                 </label>
                             </div>
 
                             <div class="form-check">
-                                <input class="form-check-input"
-                                    type="checkbox"
-                                    name="preferences"
-                                    id="prefPlayful"
+                                <input class="form-check-input" type="checkbox" name="preferences" id="prefPlayful"
                                     value="playful">
                                 <label class="form-check-label" for="prefPlayful">
                                     ชอบเล่น กระฉับกระเฉง
@@ -396,10 +366,7 @@
                             </div>
 
                             <div class="form-check">
-                                <input class="form-check-input"
-                                    type="checkbox"
-                                    name="preferences"
-                                    id="prefCuddly"
+                                <input class="form-check-input" type="checkbox" name="preferences" id="prefCuddly"
                                     value="cuddly">
                                 <label class="form-check-label" for="prefCuddly">
                                     ชอบกอด อ่อนโยน
@@ -423,8 +390,19 @@
 
             </div>
 
+        </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
     <footer class="footer mt-auto py-3 bg-body-tertiary">
-        <div class="container-fluid text-center"> <span class="text-body-secondary">&copy; 2026 คู่มือสัตว์เลี้ยง</span> </div>
+        <div class="container-fluid text-center"> <span class="text-body-secondary">&copy; 2026 คู่มือสัตว์เลี้ยง</span>
+        </div>
     </footer>
 
 
@@ -433,7 +411,7 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 
-        <script src="../js/scrip.js"></script>
+    <script src="../js/scrip.js"></script>
 </body>
 
 </html>

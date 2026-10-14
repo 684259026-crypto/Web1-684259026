@@ -60,7 +60,6 @@
     text-align: center;
     box-shadow: var(--crad--shadow);
 
-    margin-top: ;
     margin: 30px 100px;
 }
 
@@ -158,9 +157,9 @@
 .info-dager {border-left: 5px solid var(--primary-color);}
 
 .info-blue h3{
-    font-weight: 900;
+    font-weight: 700;
     color: #1064d1;
-
+    font-size: 25px;
     margin-bottom: 10px;
 }
 
@@ -205,6 +204,8 @@
     gap: 0.75rem;
     justify-content: center;
     margin-bottom: 2rem;
+
+    margin-top: 20px;
 }
 .category-btn {
     padding: 0.625rem 1.25rem;
@@ -385,9 +386,103 @@
 
 
 
+.info-section {
+    background-color: white;
+    width: 100%;
+    max-width: 100%; /* ให้ใช้ความกว้างเต็มตามคอนเทนเนอร์หลัก */
+    height: auto;
+    margin: 30px 0; /* เอา margin ซ้ายขวาออก เพื่อให้ตรงกับส่วนอื่นๆ */
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: var(--crad--shadow);
+}
+
+.info-grid {
+    display: grid;
+    /* ตั้งค่าให้แสดง 4 คอลัมน์เท่ากับการ์ดสัตว์ด้านบนเป๊ะๆ */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem; /* ใช้ระยะห่าง (gap) เท่ากับ .pet-grid ด้านบน */
+    align-items: stretch;
+    margin-top: 20px;
+}
+
+.info-grid .card {
+    margin: 0 !important;
+    height: 100%;
+}
+
+/* เพิ่มเติมสำหรับหน้าจอขนาดเล็ก (Responsive) ให้ปรับลงเหลือ 1 หรือ 2 คอลัมน์อัตโนมัติไม่ให้ล้นจอ */
+@media (max-width: 992px) {
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 
 
+/* กล่องคำแนะนำและกล่องค้นหาสัตว์เลี้ยง */
+.info-section,
+#recommendationSection {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 30px 0;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: var(--crad--shadow);
+}
 
 
+/* =================================
+   Recommendation Section
+================================= */
+
+#recommendationSection {
+    background-color: white;
+    color: #222;
+    text-align: left;
+}
+
+/* หัวข้อให้อยู่ตรงกลาง */
+#recommendationSection .info-title {
+    text-align: center;
+    color: #222;
+}
+
+/* Label */
+#recommendationSection .form-label {
+    color: #333;
+    font-weight: 600;
+}
+
+/* Select */
+#recommendationSection .form-select {
+    background-color: white;
+    color: #222;
+    border: 1px solid #ced4da;
+}
+
+/* ตัวเลือกใน select */
+#recommendationSection .form-select option {
+    background-color: white;
+    color: #222;
+}
+
+/* Radio / Checkbox */
+#recommendationSection .form-check-label {
+    color: #444;
+}
+
+/* ปุ่ม */
+#recommendationSection .form-check-input {
+    cursor: pointer;
+}
